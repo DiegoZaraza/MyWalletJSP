@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ControladorMovimientos</servlet-name>
+        <servlet-class>presentacion.controlador.ControladorMovimientos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorPrincipal</servlet-name>
+        <servlet-class>presentacion.controlador.ControladorPrincipal</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorCategorias</servlet-name>
+        <servlet-class>presentacion.controlador.ControladorCategorias</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorTipoCategorias</servlet-name>
+        <servlet-class>presentacion.controlador.ControladorTipoCategorias</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControladorMovimientos</servlet-name>
+        <url-pattern>/ControladorMovimientos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorPrincipal</servlet-name>
+        <url-pattern>/ControladorPrincipal</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorCategorias</servlet-name>
+        <url-pattern>/ControladorCategorias</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorTipoCategorias</servlet-name>
+        <url-pattern>/ControladorTipoCategorias</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
